@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Демо-сайты TTcux</title>
+<meta name="author" content="TTcux (https://github.com/TTcux1)">
+<meta name="description" content="Два демо-сайта: строительная компания с калькулятором дома и Minecraft-сервер с донатом и мониторингом.">
+<!-- © 2026 TTcux — https://github.com/TTcux1 -->
+<style>
+:root { --bg: #f3f4f0; --card: #ffffff; --ink: #1c1f1a; --muted: #5d6459; --line: #d9ddd3; --accent: #3d7d22; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg: #141613; --card: #1d201b; --ink: #ecefe8; --muted: #a2a99c; --line: #30352d; --accent: #7cc356; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 56px 20px 64px; }
+h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 0 0 12px; text-wrap: balance; }
+.lead { color: var(--muted); max-width: 60ch; margin: 0 0 40px; font-size: 18px; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+a.card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; color: inherit; transition: border-color .15s; }
+a.card:hover { border-color: var(--accent); }
+a.card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.card img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); }
+.card div { padding: 20px 22px 24px; display: grid; gap: 8px; }
+.card h2 { margin: 0; font-size: 21px; }
+.card p { margin: 0; color: var(--muted); }
+.card span { color: var(--accent); font-weight: 600; margin-top: 6px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Демо-сайты</h1>
+  <p class="lead">Два сайта с интерактивом, адаптивом под телефоны и тёмной темой. Без фреймворков: один HTML-файл, шрифты встроены. Компании и сервер вымышленные.</p>
+  <div class="grid">
+    <a class="card" href="venec/">
+      <img src="screenshots/venec-calculator.jpg" alt="Сайт «Венец»: калькулятор дома из клеёного бруса с рисунком фасада">
+      <div>
+        <h2>«Венец»: строительная компания</h2>
+        <p>Калькулятор дома: площадь, этажность, брус и комплектация. Смета и фасад пересчитываются сразу. Проекты с планировками, сравнение материалов, запись на выезд.</p>
+        <span>Открыть сайт</span>
+      </div>
+    </a>
+    <a class="card" href="rudnik/">
+      <img src="screenshots/rudnik-world.jpg" alt="Сайт «Рудник»: разрез мира Minecraft с рудами по высотам">
+      <div>
+        <h2>«Рудник»: Minecraft-сервер</h2>
+        <p>Разрез мира, в котором можно добывать блоки. Режимы, свои плагины, косметический донат с промокодами, топ игроков и мониторинг.</p>
+        <span>Открыть сайт</span>
+      </div>
+    </a>
+  </div>
+  <footer>© 2026 TTcux. Дизайн и разработка. GitHub: <a href="https://github.com/TTcux1" rel="author">github.com/TTcux1</a></footer>
+</main>
+</body>
+</html>
